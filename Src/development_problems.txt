@@ -1,0 +1,10 @@
+Our search qury earlier was recipes using ----. The problem was that it was giving me a 
+lot of options rather than the specific html recipe parsing page.
+
+Changed the query to be step by step recipes using ---. This gave the desired results. 
+
+Also, customized the websites to search in their /recipe directory only while doing this.
+
+Explored the various options for the info retrieval including the findparent, findchild etc
+
+

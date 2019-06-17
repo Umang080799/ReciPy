@@ -1,0 +1,29 @@
+We first are trying to kae our own recipe suggestion maker. We do the following in which we use OpenCV to make our won haarcascade for image recognition. For that we are using Image Net which has a database depicted of over hundreds and thoudsands of images.
+
+Image net gives us the freedom of creating our own images using the resizing of the image option and also helps us to create our won images from the already exisiting ones. 
+
+We first take the negative images, and create the positives from those negatives and then train about half of the negatives from them. 
+
+Open the image, resize it to 100 by 100, convert it to grey, save the image all using OpenCV.
+
+We upload the file description and the negative images to the server above and thus had to create an index representing the negative images. 
+
+
+Since the negative images have people on them, its good for  training literally anything except people as negative images ahould have those images which we do not to detect in the first place whereas positive images should be having the objects that we want. 
+
+Cascade info in the data and positive image info in the info folder. 
+
+We are creating samples.Create samples from the 
+
+-img : watch image uploaded and the data is trained on this image. 
+- bg : bg.txt, the background that we want
+- pngoutput: Puts the positive image in the info directory
+- num: How many images we have in the neg
+SO , the positive image is superimposed on the negative images and is angled in a way so that it can detect it easily. 
+ 
+
+We are using Custom Google Search engine as a search engine for our projects and websites. Created a new project and then searched for the Custom Search API and then I enabled the API. After that I created the API key which I can use for performing the custom searching for my app.
+
+Made a Custom Search Engine(https://cse.google.com/cse?cx=016821038724467541499:rlztcsuerck) using the top 10 recipe cooking websites and then using the keywords "recipes using tomatoes onions etc" and used to get the search results in just these websites. 
+
+Had to do pip install google-api-python-client in order to make all the required imports work.
