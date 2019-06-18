@@ -7,12 +7,13 @@ def main():
     ClearImageFolder()
     
     ##Instantiate the class object
-    facedetection = VideoCapture()
+    #facedetection = VideoCapture()
     
     ##Call CaptureFrames from the class to begin the class detection
-    search_key = facedetection.CaptureFrames()
+    #search_key = facedetection.CaptureFrames()
 
-    print("Search key is:" + search_key)
+    #search = "Search key is:" + search_key
+    search_key = "step by step recipe using tomatoes"
     
     #Gives us back the results dict object from the Customized Search Engine
     search_results = collect_cse_results(search_key)
@@ -29,7 +30,10 @@ def main():
     print(website_dict)
 
     #Extracting data
-    extract_info(website_dict)
+    main_list = extract_info(website_dict)
+
+     
+    return main_list
 
 
 

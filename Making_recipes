@@ -27,3 +27,7 @@ We are using Custom Google Search engine as a search engine for our projects and
 Made a Custom Search Engine(https://cse.google.com/cse?cx=016821038724467541499:rlztcsuerck) using the top 10 recipe cooking websites and then using the keywords "recipes using tomatoes onions etc" and used to get the search results in just these websites. 
 
 Had to do pip install google-api-python-client in order to make all the required imports work.
+
+I'm trying to get the script running using HTML Button which uses Django.
+
+I transferred all the migrations using python3 manage.py migrate. 
