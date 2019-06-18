@@ -1,13 +1,13 @@
 import cv2, numpy,os,argparse
 
 DEFAULT_OUTPUT_PATH = 'OpenCV Results/'
-DEFAULT_CASCADE_INPUT_PATH = 'haarcascade_frontalface_default.xml'
+DEFAULT_CASCADE_INPUT_PATH = 'watch_cascade.xml'
 #tomato_cascade = cv2.CascadeClassifier('tomato_cascade.xml')
 #cabbage_cascade = cv2.CascadeClassifier('cabbage_cascade.xml')
 #chicken_cascade = cv2.CascadeClassifier('Chicken_cascade.xml')
 #onion_cascade = cv2.CascadeClassifier('onion_cascade.xml')
 #salt_cascade = cv2.CascadeClassifier('salt_cascade.xml')
-watch_cascade = cv2.CascadeClassifier('watch_cascade.xml')
+watch_cascade = cv2.CascadeClassifier('/home/umang/Desktop/RecipePy/RecipePy/Src/watch_cascade.xml')
 watch = False
 
 
@@ -15,8 +15,8 @@ class VideoCapture:
     
     def __init__(self):
         self.count = 0
-        self.argsObj = Parse()
-        self.faceCascade = cv2.CascadeClassifier(self.argsObj.input_path)
+        #self.argsObj = Parse()
+        #self.faceCascade = cv2.CascadeClassifier(self.argsObj.input_path)
         self.videoSource = cv2.VideoCapture(0)
         
     def CaptureFrames(self) -> str:
@@ -38,7 +38,7 @@ class VideoCapture:
             watches = watch_cascade.detectMultiScale(
                screenColor,
                scaleFactor = 1.05,
-               minNeighbors = 3,
+               minNeighbors = 5,
                minSize = (20,20),
                flags = 0)
             
@@ -80,8 +80,8 @@ class VideoCapture:
 
 def Parse():
     parser =  argparse.ArgumentParser(description='Cascade path for Face Detection')
-    parser.add_argument('-i','--input_path', type = str , default = DEFAULT_CASCADE_INPUT_PATH,help = 'CASCADE input Path')
-    parser.add_argument('-o','--output_path',type = str, default = DEFAULT_OUTPUT_PATH, help = 'Output path for pics taken')
+    parser.add_argument('-i','--input_path', type = str , default = DEFAULT_CASCADE_INPUT_PATH,help = 'CASCADE input Path',required =True)
+    parser.add_argument('-o','--output_path',type = str, default = DEFAULT_OUTPUT_PATH, help = 'Output path for pics taken',required=True)
     args = parser.parse_args()
     return args     
 

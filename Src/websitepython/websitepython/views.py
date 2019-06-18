@@ -2,10 +2,12 @@ from django.shortcuts import render
 import sys
 from pathlib import Path
 
+#It's the current file location
 HERE = Path(__file__).parent
 
 sys.path.append(str(HERE / '../../'))
 
+#Importing the main() function
 from main import main
 
 #For renderting the HTML page
