@@ -83,12 +83,10 @@ def extract_info(website_dict):
             parent_prep_yield_list.append(stats)
     
     for dish,stat,recipe,nutrition,ingredient in zip(parent_dish_list,parent_prep_yield_list,parent_recipe_list,parent_nutrition_list,parent_ingredient_list):
-        super_parent_list.append("Dish Name:" + str(dish))
-        super_parent_list.append("Prep Statistics:" + str(stat))
-        super_parent_list.append("Recipe:" + str(recipe))
-        super_parent_list.append("Nutrition:" + str(nutrition))
-        super_parent_list.append("Ingredient:" + str(ingredient))
-        super_parent_list.append("--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------")    
-        final_string = '\n'.join(super_parent_list)
-    return final_string
+        super_parent_list.append(str(dish))
+        super_parent_list.append(str(stat))
+        super_parent_list.append(str(recipe))
+        super_parent_list.append(str(nutrition))
+        super_parent_list.append(str(ingredient))
+    return super_parent_list
     
