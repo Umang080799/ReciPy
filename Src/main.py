@@ -31,10 +31,8 @@ def main():
 
     #Extracting data
     main_list = extract_info(website_dict)
-
-     
+   
     return main_list
-
 
 
 if __name__ == '__main__':

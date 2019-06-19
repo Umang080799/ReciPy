@@ -40,9 +40,9 @@ class Cookinglight:
         return nutrition_list
   
     def extract_prep_info(self,soup):
-        stat_dict = {}
+        stat_dict = []
         stat_value = soup.findAll('div',attrs={'class': 'recipe-meta-item-body'})
         stat_key = soup.findAll('div',attrs={'class': 'recipe-meta-item-header'})
         for key,val in zip(stat_key,stat_value):
-             stat_dict.update({key.text.strip() : val.text.strip()})        
+             stat_dict.append(key.text.strip() + ":" + val.text.strip())        
         return stat_dict

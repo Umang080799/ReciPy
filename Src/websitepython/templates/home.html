@@ -23,11 +23,18 @@
         <div class="wrapper">
         <button onclick = "location.href = '{%url 'script' %}'" align ="center">Give me Recipes !!</button> </div>
         <hr>
-        {% for key in key_name %}
-            <ul>
-                <li>{{ key }}</li>
-                <br><br>
-            </ul>
+        {% for element in search %}
+           {% for key,val in element.items %}
+              <ul>
+                  <li>{{ key }}</li> <br>
+                  {% for items in val %}
+                  <ul><li>{{ items }}</li></ul>
+                  <br>
+                  {% endfor %}
+              </ul>
+              <br><br>
+            {% endfor %}
+            <hr>
         {% endfor %}
     </body> 
 </html>

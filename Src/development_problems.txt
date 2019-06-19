@@ -8,3 +8,12 @@ Also, customized the websites to search in their /recipe directory only while do
 Explored the various options for the info retrieval including the findparent, findchild etc
 
 
+One of the major problems was figuring out what kind of data structure to pass to the template
+After lot of thought, I passed a list of dictionary to the home.html to achieve
+the desired result.
+
+I had to make a list as I could have duplicate key values and also then I used Ordereddict
+as the order of the keys was getting changed again and again.   
+
+So, I had a list of dictionary which with dish, ingredient etc as the key string and the
+list/dictionary as its value.

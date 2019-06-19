@@ -3,6 +3,7 @@ import requests
 from bs4 import BeautifulSoup
 from config import *
 from cookinglight import *
+from collections import OrderedDict
 
 
 def collect_cse_results(search_key):
@@ -59,7 +60,8 @@ def extract_info(website_dict):
     parent_ingredient_list = []
     parent_nutrition_list = []
     parent_prep_yield_list = []
-    super_parent_list = []
+    super_parent_list = {}
+    super_list = []
 
 
     for key in website_dict:
@@ -83,10 +85,9 @@ def extract_info(website_dict):
             parent_prep_yield_list.append(stats)
     
     for dish,stat,recipe,nutrition,ingredient in zip(parent_dish_list,parent_prep_yield_list,parent_recipe_list,parent_nutrition_list,parent_ingredient_list):
-        super_parent_list.append(str(dish))
-        super_parent_list.append(str(stat))
-        super_parent_list.append(str(recipe))
-        super_parent_list.append(str(nutrition))
-        super_parent_list.append(str(ingredient))
-    return super_parent_list
+        super_parent_list = OrderedDict([("Dish" , dish),("Prep_Statistics" ,stat)        
+        ,("Recipe",recipe),("Nutrition" ,nutrition),("Ingredients" ,ingredient)])  
+        super_list.append(super_parent_list)    
+        super_parent_list = {} 
+    return super_list
     
