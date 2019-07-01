@@ -1,17 +1,13 @@
 from cse_extraction import *
-from VideoDetection import *
+from API_Object_Recognition import *
 
 def main():
 
-    ##To clear the image slate 
-    ClearImageFolder()
-    
-    ##Instantiate the class object
-    facedetection = VideoCapture()
-    
-    ##Call CaptureFrames from the class to begin the class detection
-    search_key = facedetection.CaptureFrames()
-    
+    #Clarifai API Call 
+    search_key = object_detect()
+
+    print("Search key is" + search_key)
+
     #Gives us back the results dict object from the Customized Search Engine
     search_results = collect_cse_results(search_key)
 
