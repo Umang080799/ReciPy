@@ -11,9 +11,6 @@ def main():
     
     ##Call CaptureFrames from the class to begin the class detection
     search_key = facedetection.CaptureFrames()
-
-    #search = "Search key is:" + search_key
-    #search_key = "step by step recipe using tomatoes"
     
     #Gives us back the results dict object from the Customized Search Engine
     search_results = collect_cse_results(search_key)
