@@ -7,7 +7,7 @@ DEFAULT_CASCADE_INPUT_PATH = 'watch_cascade.xml'
 #chicken_cascade = cv2.CascadeClassifier('Chicken_cascade.xml')
 #onion_cascade = cv2.CascadeClassifier('onion_cascade.xml')
 #salt_cascade = cv2.CascadeClassifier('salt_cascade.xml')
-watch_cascade = cv2.CascadeClassifier('/home/umang/Desktop/RecipePy/RecipePy/Src/watch_cascade.xml')
+watch_cascade = cv2.CascadeClassifier('C:/Users/Vishesh Gupta/Desktop/RecipePy/Src/watch_cascade.xml')
 watch = False
 
 
