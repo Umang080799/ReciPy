@@ -13,3 +13,4 @@ Tried out Object Detectin via:
 3. pip install Django
 4. python manage.py runserver --nothreading --noreload
 5. Deactivate to close the vitual env 
+6. When running the project via the Tensorflow, be sure tio press "q" on the object detection window.
