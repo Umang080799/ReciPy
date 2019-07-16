@@ -1,0 +1,2 @@
+API_KEY = "AIzaSyCVly3e0zwxjll08HpJSlutDLKHphGPxMw"
+CX = "016821038724467541499:rlztcsuerck"
