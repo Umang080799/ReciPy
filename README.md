@@ -35,7 +35,7 @@ Currently, I trained the model for detecting Onions, Chicken, Tomato using TF
 
 
 
-## The following were the results by custom training for detecting Onions 
+## The following were the results by custom training for detecting Onions, Tomatoes and Chicken
 
 <img width="669" alt="After training result_2" src="https://user-images.githubusercontent.com/35209670/61490170-53e2fd80-a97a-11e9-861e-efa17d4b7073.png">
 <img width="463" alt="After_training_result_onion_1" src="https://user-images.githubusercontent.com/35209670/61490171-53e2fd80-a97a-11e9-880e-de5dd2c52190.png">
