@@ -1,0 +1,26 @@
+<annotation>
+	<folder>Onions</folder>
+	<filename>Image_38.jpeg</filename>
+	<path>/Users/umanggupta/Desktop/Tensorflow/models/research/object_detection/Tensorflow_Images/Onions/Image_38.jpeg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>275</width>
+		<height>183</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Chicken</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>110</xmin>
+			<ymin>46</ymin>
+			<xmax>183</xmax>
+			<ymax>135</ymax>
+		</bndbox>
+	</object>
+</annotation>

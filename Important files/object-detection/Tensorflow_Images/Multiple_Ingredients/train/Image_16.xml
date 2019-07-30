@@ -1,0 +1,26 @@
+<annotation>
+	<folder>Onions</folder>
+	<filename>Image_16.jpeg</filename>
+	<path>/Users/umanggupta/Desktop/Tensorflow/models/research/object_detection/Tensorflow_Images/Onions/Image_16.jpeg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>262</width>
+		<height>193</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Lettuce</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>73</xmin>
+			<ymin>25</ymin>
+			<xmax>240</xmax>
+			<ymax>57</ymax>
+		</bndbox>
+	</object>
+</annotation>
