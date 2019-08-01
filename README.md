@@ -31,6 +31,7 @@ Currently, I trained the model for detecting Onions, Chicken, Tomato, Carrots us
 <img width="669" alt="After training result_2" src="https://user-images.githubusercontent.com/35209670/61490170-53e2fd80-a97a-11e9-861e-efa17d4b7073.png">
 <img width="463" alt="After_training_result_onion_1" src="https://user-images.githubusercontent.com/35209670/61490171-53e2fd80-a97a-11e9-880e-de5dd2c52190.png">
 <img width="625" alt="image4" src="https://user-images.githubusercontent.com/35209670/62083817-d21a8c00-b225-11e9-934a-1edbab79c679.png">
+<img width="721" alt="image3" src="https://user-images.githubusercontent.com/35209670/62301980-8cd5a480-b447-11e9-8e48-f2f92b17c2b1.png">
 <img width="588" alt="Tensorflow API Detection_Mixed_ingredients_2" src="https://user-images.githubusercontent.com/35209670/62083705-954e9500-b225-11e9-89cd-37528ebe8a52.png">
 
 ## Tools used for training were:
