@@ -11,14 +11,14 @@ Tried out Object Detectin via:
 ## The following is the frontend UI which displays the all the results gathered. 
 
 ## We have the details for the following information:
-
+##We get a list of all the detected ingredients 
 1. Dish name
 2. Preparation Statistics
 3. Recipe
 4. Nutrition
 5. Ingredients
 
-<img width="1428" alt="Screen Shot 2019-07-18 at 4 29 17 PM" src="https://user-images.githubusercontent.com/35209670/61490364-c2c05680-a97a-11e9-8093-9f661f074951.png">
+<img width="1436" alt="Screen Shot 2019-08-03 at 4 59 59 PM" src="https://user-images.githubusercontent.com/35209670/62416841-38c9ec00-b610-11e9-801c-c82a19d2fa20.png">
 
 <img width="1110" alt="Screen Shot 2019-07-29 at 10 15 10 PM" src="https://user-images.githubusercontent.com/35209670/62095433-6f89b600-b24e-11e9-9b59-1d747f0a41e1.png">
 
