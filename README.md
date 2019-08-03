@@ -11,7 +11,7 @@ Tried out Object Detectin via:
 ## The following is the frontend UI which displays the all the results gathered. 
 
 ## We have the details for the following information:
-##We get a list of all the detected ingredients 
+## We get a list of all the detected ingredients 
 1. Dish name
 2. Preparation Statistics
 3. Recipe
