@@ -1,4 +1,4 @@
-# RecipePy
+# ReciPy
 Python-based application to help you decide what to do with the left over groceries in your fridge!
 
 Tried out Object Detectin via:
